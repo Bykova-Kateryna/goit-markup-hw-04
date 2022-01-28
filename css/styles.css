@@ -71,14 +71,13 @@ img{
 
     display: flex;
     margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 .web {
     color: var(--web-color);
 }
 nav{
     display: flex; 
+    align-items: center;
 }
 .site-nav-list{
     display: flex;
@@ -406,6 +405,9 @@ color: var(--backgraund-color-general);
     font-style: normal;
 
     margin-top: 20px;
+}
+.address a{
+    display: block;
 }
 .address-section{
     margin-right: 70px;
