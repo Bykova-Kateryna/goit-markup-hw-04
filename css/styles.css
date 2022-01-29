@@ -59,6 +59,7 @@ img{
 }
 .header-section ul a{
     display: inline-flex;
+    align-items: center;
 }
 
 .logo {
@@ -147,7 +148,7 @@ nav{
     padding-top: 200px;
     box-sizing: border-box;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/backgraund.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgraund.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,7 +197,11 @@ nav{
 .advantage{
     display: flex;
 }
-
+.advantage div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .advantage h3{
     font-weight: bold;
     font-size: 14px;
@@ -225,21 +230,6 @@ nav{
     margin-bottom: 30px;
     display: block;
     border-radius: 4px;
-    text-align: center;
-    padding: auto;
-
-}
-.advantage-first{
-    margin-top: 25px;
-}
-.advantage-second{
-   margin-top: 25px;
-}
-.advantage-three{
-    margin-top: 25px;
-}
-.advantage-four{
-    margin-top: 25px;
 }
 /*секция чем мы занимаемся*/
 .description{
@@ -265,6 +255,7 @@ nav{
 .our-team{
     background-color: var(--second-backgraund-color);
     text-align: center;
+    align-items: center;
 }
 .our-team-description{
     font-weight: bold;
@@ -305,74 +296,85 @@ nav{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.our-team-contacts a{
+.our-team-link{
+    display: flex;
+    justify-content: center;
+}
+.our-team-link a{
     display: block;
     text-decoration: none;
-}
-.our-team-contacts a:hover{
-    background-color: var(--web-color);
-}
-.our-team-contacts-link{
     width: 44px;
     height: 44px;
     background-color: var(--backgraund-color-general);
     color: #AFB1B8;
     border-radius: 50%;
-    text-align: center;
-   cursor: pointer;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
 }
-.our-team-contacts-link:hover{
+
+.our-team-link a:hover{
 background-color: var(--web-color);
 color: var(--backgraund-color-general);
 }
-.our-team-contacts-link:focus{
+.our-team-link a:focus{
     background-color: var(--web-color);
     color: var(--backgraund-color-general);
     }
 .our-team-contacts-svg{
     fill: currentColor;
 }
-.our-team-link{
+.our-team-link ul{
     display: inline-flex;
-    justify-content: space-around;
+    align-items: center;
+}
+.our-team-link{
     margin-top: 16px;
 }
 /*наши клиенты*/
 .client-section{
     text-align: center;
-    color: var(--title-text-color);
-    size: 36px;
-    line-height: 1,17;
 }
 .client-section h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    color: var(--title-text-color);
+
     margin-bottom: 50px;
 }
-.our-client{
+.our-client-list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our-client-list li{
+    margin-right: 30px;
+}
+.our-client-list li:last-child{
+    margin-right: 0px;
+}
+
+.our-client-link{
     display: inline-flex;
-    }
-    .our-client-list{
-        margin-right: 30px;
-    }
-    .our-client-list:last-child{
-        margin-right: 0px;
-    }
-.our-client a{
-    display: block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    box-sizing: border-box;
     border-radius: 4px;
     color: #AFB1B8;
-    padding: 16px 32px;
-    cursor: pointer;
 }
-.our-client a:hover{
-    color: #2196F3;
-    border: 1px solid #2196F3;
+.our-client-link:hover{
+    border: 1px solid var(--web-color);
+    color: var(--web-color);
 }
-.our-client a:focus{
-    color: #2196F3;
-    border: 1px solid #2196F3;
+.our-client-link:focus{
+    border: 1px solid var(--web-color);
+    color: var(--web-color);
 }
 .our-client-img{
     fill: currentColor;
@@ -424,10 +426,7 @@ color: var(--backgraund-color-general);
 }
 .footer-section{
     display: flex;
-}
-.connect-section{
-    padding-top: 12px;
-    padding-bottom: 40px;
+    align-items: baseline;
 }
 
 .connect-section h2{
@@ -437,7 +436,11 @@ color: var(--backgraund-color-general);
     margin-bottom: 20px;
 }
 .connect-list{
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
+}
+.connect-list ul{
+    display: flex;
 }
 .connect-list li{
     margin-right: 10px;
@@ -446,10 +449,16 @@ color: var(--backgraund-color-general);
     margin-right: 0px;
 }
 .connect-list a{
+    display: block;
     text-decoration: none;
     color: var(--backgraund-color-general);
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
 }
 .connect-list a:hover{
     background-color: var(--web-color);
@@ -459,7 +468,6 @@ color: var(--backgraund-color-general);
 }
 .connect-list-svg{
     fill: currentColor;
-   
 }
 
 /*portfolio-html*/
@@ -499,6 +507,11 @@ color: var(--backgraund-color-general);
     color: var(--backgraund-color-general);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+.button-portfolio:focus{
+    background-color: var(--web-color);
+    color: var(--backgraund-color-general);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 /*опции(список) портфолио*/
 .general-portfolio-list{
     display: flex;
@@ -523,6 +536,9 @@ color: var(--backgraund-color-general);
     background-color: var(--backgraund-color-general);
 }
 .portfolio-list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-list:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .border-portfolio-list{
