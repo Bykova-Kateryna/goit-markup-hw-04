@@ -152,7 +152,7 @@ nav{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 1600px;
+    background-size: 1600px;
 }
 .order-title {
     color: #FFFFFF;
@@ -300,6 +300,12 @@ nav{
     display: flex;
     justify-content: center;
 }
+.our-team-link li{
+    margin-right: 10px;
+}
+.our-team-link li:last-child{
+    margin-right: 0px;
+}
 .our-team-link a{
     display: block;
     text-decoration: none;
@@ -344,7 +350,7 @@ color: var(--backgraund-color-general);
 
     margin-bottom: 50px;
 }
-.our-client-list ul{
+.our-client-list{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -364,7 +370,6 @@ color: var(--backgraund-color-general);
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
-    box-sizing: border-box;
     border-radius: 4px;
     color: #AFB1B8;
 }
@@ -438,9 +443,6 @@ color: var(--backgraund-color-general);
 .connect-list{
     display: flex;
     justify-content: center;
-}
-.connect-list ul{
-    display: flex;
 }
 .connect-list li{
     margin-right: 10px;
